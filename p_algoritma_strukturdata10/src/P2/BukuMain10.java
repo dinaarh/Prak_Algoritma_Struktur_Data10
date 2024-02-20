@@ -18,7 +18,7 @@ public class BukuMain10 {
         bk2.terjual(11);
         bk2.tampilInformasi();
 
-        Buku10 bukuDina = new Buku10("inspirasi", "dina", 112, 22, 56000);
+        Buku10 bukuDina = new Buku10("inspirasi", "dinaa", 112, 22, 56000);
         bukuDina.terjual(7);
         bukuDina.tampilInformasi();
     }
