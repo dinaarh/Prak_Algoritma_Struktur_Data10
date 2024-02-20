@@ -27,6 +27,24 @@ public class Buku10 {
         harga = hrg;
     }
 
+    int hitungHargaTotal(int jml) {
+        return harga * jml;
+    }
+
+    int hitungDiskon(int hargaTotal) {
+        if (hargaTotal > 150000) {
+            return 12 * hargaTotal / 100;
+        } else if (hargaTotal >= 75000 && hargaTotal <= 150000) {
+            return 5 * hargaTotal / 100;
+        } else {
+            return 0;
+        }
+    }
+
+    int hitungHargaBayar(int hargaTotal, double diskon) {
+        return hargaTotal - (int)diskon;
+    }
+
     public Buku10() {
 
     }
