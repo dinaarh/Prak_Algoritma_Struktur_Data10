@@ -15,5 +15,10 @@ public class main {
             System.out.print("Masukkan tinggi: ");
             sgArray[i].tinggi = sc10.nextInt();
         }
+
+        for (int i = 0; i < 4; i++) {
+            System.out.println("Segitiga ke-" + i);
+            System.out.println("Luas:" + sgArray[i].hitungLuas() + ", Keliling: " + sgArray[i].hitungKeliling());
+        }
     }
 }
