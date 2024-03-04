@@ -31,5 +31,17 @@ public class Main {
             System.out.println("Ipk           : " + mhs[i].ipk);
             System.out.println();
         }
+
+        System.out.println();
+
+        double rataRata = mhs[0].hitungRata(mhs);
+        System.out.println("Rata-rata IPK mahasiswa: " + rataRata);
+
+        Mahasiswa ipkTertinggi = mhs[0].hitungIpkTertinggi(mhs);
+        System.out.println("Data mahasiswa dengan IPK tertinggi:");
+        System.out.println("Nama          : " + ipkTertinggi.nama);
+        System.out.println("NIM           : " + ipkTertinggi.nim);
+        System.out.println("Jenis Kelamin : " + ipkTertinggi.jenisKelamin);
+        System.out.println("IPK           : " + ipkTertinggi.ipk);
     }
 }
