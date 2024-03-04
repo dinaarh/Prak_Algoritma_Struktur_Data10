@@ -12,6 +12,6 @@ public class Bola {
     }
 
     public double volume() {
-        return (4 / 3 * Math.PI * jari * jari * jari);
+        return ((4.0 / 3.0) * Math.PI * jari * jari * jari);
     }
 }
