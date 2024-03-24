@@ -3,6 +3,15 @@ package P5.BruteForceDivideConquer;
 public class Pangkat10 {
     public int nilai, pangkat;
 
+    public Pangkat10(){
+
+    }
+
+    public Pangkat10(int nilai, int pangkat) {
+        this.nilai = nilai;
+        this.pangkat = pangkat;
+    }
+
     int pangkatBF(int a, int n) {
         int hasil = 1;
         for (int i = 0; i < n; i++) {
