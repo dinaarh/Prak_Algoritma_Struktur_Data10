@@ -22,20 +22,34 @@ public class MainPangkat10 {
             png[i] = new Pangkat10(nilai, pangkat);
         }
 
+        int menu;
         System.out.println("==================================");
-        System.out.println("HASIL PANGKAT - BRUTE FORCE");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah "
-                    + png[i].pangkatBF(png[i].nilai, png[i].pangkat));
-        }
+        System.out.println("Pilih metode yang digunakan:");
+        System.out.println("1. Brute Force");
+        System.out.println("2. Divide and Conquer");
+        System.out.print("Masukkan pilihan anda: ");
+        menu = sc10.nextInt();
 
-        System.out.println("==================================");
-        System.out.println("HASIL PANGKAT - DIVIDE AND CONQUER");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah "
-                    + png[i].pangkatDC(png[i].nilai, png[i].pangkat));
+        switch (menu) {
+            case 1:
+                System.out.println("==================================");
+                System.out.println("HASIL PANGKAT - BRUTE FORCE");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println("Hasil dari " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah "
+                            + png[i].pangkatBF(png[i].nilai, png[i].pangkat));
+                }
+                break;
+            case 2:
+                System.out.println("==================================");
+                System.out.println("HASIL PANGKAT - DIVIDE AND CONQUER");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println("Hasil dari " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah "
+                            + png[i].pangkatDC(png[i].nilai, png[i].pangkat));
+                }
+                break;
+            default:
+                System.out.println("Pilihan tidak tersedia.");
         }
-
         sc10.close();
     }
 }
