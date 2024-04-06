@@ -37,4 +37,17 @@ public class PencarianBuku10 {
             System.out.println("data " + x + " tidak ditemukan");
         }
     }
+
+    void TampilData(int x, int pos) {
+        if (pos != -1) {
+            System.out.println("Kode Buku \t  : " + x);
+            System.out.println("Judul Buku \t  : " + listBuku[pos].judullBuku);
+            System.out.println("Tahun Terbit \t  : " + listBuku[pos].tahunTerbit);
+            System.out.println("Pengarang \t  : " + listBuku[pos].pengarang);
+            System.out.println("Stock \t\t  : " + listBuku[pos].stock);
+
+        } else {
+            System.out.println("data " + x + " tidak ditemukan ");
+        }
+    }
 }
