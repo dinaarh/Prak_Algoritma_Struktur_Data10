@@ -63,10 +63,10 @@ public class Gudang10 {
         }
     }
 
-    void tampilkanBarang() {
+    public void tampilkanBarang() {
         if (!cekKosong()) {
             System.out.println("Rincian tumpukan Barang di Gudang : ");
-            for (int i = 0; i <= top; i++) {
+            for (int i = top; i >= 0; i--) {
                 System.out.printf("Kode %d : %s (Kategori %s)\n", tumpukan[i].kode, tumpukan[i].nama,
                         tumpukan[i].kategori);
             }
