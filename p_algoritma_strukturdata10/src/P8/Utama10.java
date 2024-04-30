@@ -5,17 +5,22 @@ import java.util.Scanner;
 public class Utama10 {
     public static void main(String[] args) {
         // Instansiasi Gudang
-        Gudang10 gudang = new Gudang10(7);
+        // Gudang10 gudang = new Gudang10(7);
 
         // Deklarasi Scanner
         Scanner scanner10 = new Scanner(System.in);
+        System.out.print("Masukkan kapasitas gudang: ");
+        int kapasitas = scanner10.nextInt();
+        scanner10.nextLine();
+        Gudang10 gudang = new Gudang10(kapasitas);
 
         while (true) {
             System.out.println("\nMenu : ");
             System.out.println("1. Tambah Barang");
             System.out.println("2. Ambil Barang");
             System.out.println("3. Tampilkan Tumpukan Barang");
-            System.out.println("4. Keluar");
+            System.out.println("4. Lihat Barang Teratas");
+            System.out.println("5. Keluar");
             System.out.print("Pilih operasi : ");
             int pilihan = scanner10.nextInt();
             scanner10.nextLine();
@@ -41,6 +46,9 @@ public class Utama10 {
                     gudang.tampilkanBarang();
                     break;
                 case 4:
+                    gudang.lihatBarangTeratas();
+                    break;
+                case 5:
                     System.exit(0);
                     break;
                 default:
