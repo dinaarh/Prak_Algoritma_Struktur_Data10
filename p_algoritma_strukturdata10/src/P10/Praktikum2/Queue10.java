@@ -103,4 +103,15 @@ public class Queue10 {
         }
         return dt;
     }
+
+    public void peekRear() {
+        if (!IsEmpty()) {
+            System.out.println("Elemen terbelakang : " + 
+            data[rear].norek + " " + data[rear].nama + " " + 
+            data[rear].alamat + " " + data[rear].umur + " " + 
+            data[rear].saldo);
+        } else {
+            System.out.println("Queue masih kosong");
+        }
+    }
 }
