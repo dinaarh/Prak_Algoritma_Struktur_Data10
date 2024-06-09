@@ -63,4 +63,8 @@ public class Graph10 {
         }
         System.out.println("");
     }
+
+    boolean adjacency(int start, int end) throws Exception {
+        return list[start].size() > 0 && list[start].get(0) == end;
+    }
 }
