@@ -1,6 +1,6 @@
 package P16;
 
-public class Mahasiswa10 {
+public class Mahasiswa10 implements Comparable<Mahasiswa10> {
     String nim;
     String nama;
     String notelp;
@@ -13,6 +13,11 @@ public class Mahasiswa10 {
         this.nim = nim;
         this.nama = nama;
         this.notelp = notelp;
+    }
+
+    @Override
+    public int compareTo(Mahasiswa10 other) {
+        return this.nim.compareTo(other.nim);
     }
 
     @Override
