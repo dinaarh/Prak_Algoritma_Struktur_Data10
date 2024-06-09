@@ -1,11 +1,12 @@
 package P16;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.Stack;
 
 public class LoopCollection10 {
     public static void main(String[] args) {
-        Stack<String> fruits = new Stack<>();
+        List<String> fruits = new Stack<>();
         fruits.push("Banana");
         fruits.add("Orange");
         fruits.add("Watermelon");
