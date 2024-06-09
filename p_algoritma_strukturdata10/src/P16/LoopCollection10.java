@@ -1,18 +1,17 @@
 package P16;
 
 import java.util.Iterator;
-import java.util.List;
 import java.util.Stack;
 
 public class LoopCollection10 {
     public static void main(String[] args) {
-        List<String> fruits = new Stack<>();
+        Stack<String> fruits = new Stack<>();
         fruits.push("Banana");
         fruits.add("Orange");
         fruits.add("Watermelon");
         fruits.add("Leci");
         fruits.push("Salak");
-
+        fruits.set(fruits.size() - 1, "Strawberry");
         for (String fruit : fruits) {
             System.out.printf("%s ", fruit);
         }
@@ -23,8 +22,8 @@ public class LoopCollection10 {
             System.out.printf("%s ", fruits.pop());
         }
 
-        // fruits.push("Melon");
-        // fruits.push("Durian");
+        fruits.push("Melon");
+        fruits.push("Durian");
         System.out.println("");
         for (Iterator<String> it = fruits.iterator(); it.hasNext();) {
             String fruit = it.next();
