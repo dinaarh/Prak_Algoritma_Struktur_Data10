@@ -15,6 +15,9 @@ public class GraphMain10 {
         System.out.println("Hasil setelah penghapusan edge");
         gdg.removeEdge(2, 1);
         gdg.printGraph();
+
+        System.out.println("Menghitung Degree ");
+        gdg.printDegree();
         // Scanner sc10 = new Scanner(System.in);
         // Langkah 13 dan 14
         // Graph10 gedung = new Graph10(6);

@@ -29,4 +29,32 @@ public class GraphMatriks10 {
             System.out.println();
         }
     }
+
+    public int inDegree(int v) {
+        int inDegree = 0;
+        for (int i = 0; i < vertex; i++) {
+            if (matriks[i][v] != 0) {
+                inDegree++;
+            }
+        }
+        return inDegree;
+    }
+    public int outDegree(int v) {
+        int outDegree = 0;
+        for (int i = 0; i < vertex; i++) {
+            if (matriks[v][i] != 0) {
+                outDegree++;
+            }
+        }
+        return outDegree;
+    }
+    public void printDegree() {
+        for (int i = 0; i < vertex; i++) {
+            System.out.println("Vertex " + (char) ('A' + i) + " : ");
+            System.out.println("In-degree : " + inDegree(i));
+            System.out.println("Out-degree : " + outDegree(i));
+            System.out.println("Degree : " + (inDegree(i) + outDegree(i)));
+            System.out.println();
+        }
+    }
 }
